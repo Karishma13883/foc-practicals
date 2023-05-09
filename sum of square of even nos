@@ -1,0 +1,17 @@
+#include<stdio.h> 
+int main(){ 
+	int upto,var; 
+	scanf("%d",&upto); 
+	int EvenAns=0,OddAns=0; 
+	for(var=1;var<=upto;++var){ 
+		if(var&1){   // For odd numbers 
+			OddAns=(var*var*var); 
+			printf("%d ",OddAns); 
+		} 
+		else{  //For Even numbers 
+			EvenAns = (var*var); 
+			printf("%d ",EvenAns); 
+		} 
+	} 
+	return 0; 
+} 
